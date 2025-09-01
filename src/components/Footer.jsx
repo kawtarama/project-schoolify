@@ -68,6 +68,10 @@
 
 // export default Footer;
 
+import { FaLinkedin, FaInstagram, FaTwitter, FaFacebook } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/Logo.png';
@@ -89,15 +93,35 @@ const Footer = () => {
 
             {/* --- Phone & Email --- */}
             <div className="space-y-2 mb-6">
-              <p className="text-gray-300">📞 +212 5 22 52 09 35</p>
-              <p className="text-gray-300">✉️ contact@schoolify-edtech.com</p>
-            </div>
+           <div className="space-y-2 mb-6">
+            <p className="flex items-center text-gray-300 space-x-2">
+              <FaPhoneAlt className="text-gray-400" />
+              <span>+212 5 22 52 09 35</span>
+            </p>
+            <p className="flex items-center text-gray-300 space-x-2">
+              <FaEnvelope className="text-gray-400" />
+              <span>contact@schoolify-edtech.com</span>
+            </p>
+          </div>
+                      </div>
 
+            
             {/* --- Socials --- */}
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-blue-400 text-2xl">📘</a>
-              <a href="#" className="text-gray-300 hover:text-blue-400 text-2xl">💼</a>
-            </div>
+          <div className="flex space-x-4">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-blue-600 text-2xl transition-colors duration-300">
+              <FaLinkedin />
+            </a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-pink-500 text-2xl transition-colors duration-300">
+              <FaInstagram />
+            </a>
+            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-blue-400 text-2xl transition-colors duration-300">
+              <FaTwitter />
+            </a>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-blue-700 text-2xl transition-colors duration-300">
+              <FaFacebook />
+            </a>
+          </div>
+
           </div>
 
           {/* --- Produit --- */}

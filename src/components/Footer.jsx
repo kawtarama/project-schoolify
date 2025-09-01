@@ -108,7 +108,7 @@ const Footer = () => {
             
             {/* --- Socials --- */}
           <div className="flex space-x-4">
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-blue-600 text-2xl transition-colors duration-300">
+            <a href="https://www.linkedin.com/company/schoolifyacademy/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-blue-600 text-2xl transition-colors duration-300">
               <FaLinkedin />
             </a>
             <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-pink-500 text-2xl transition-colors duration-300">

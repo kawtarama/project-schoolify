@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { MessageSquare, Target, Zap } from "lucide-react";
 const QuoteSection = () => {
   const [formData, setFormData] = React.useState({
     name: '',
@@ -403,7 +403,7 @@ const QuoteSection = () => {
                   </>
                 ) : (
                   <>
-                    📨 Envoyer ma demande de devis
+                     Envoyer ma demande de devis
                   </>
                 )}
               </button>
@@ -415,51 +415,56 @@ const QuoteSection = () => {
         </div>
 
         {/* Section avantages */}
-        <div className="mt-16">
-          <div className="bg-white p-8 rounded-2xl shadow-lg">
-            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
-              🎯 Ce que vous obtiendrez
-            </h3>
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="text-center">
-                <div 
-                  className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-                  style={{ backgroundColor: '#00adee' }}
-                >
-                  <span className="text-white text-2xl">💬</span>
-                </div>
-                <h4 className="font-bold text-gray-900 mb-2">Consultation gratuite</h4>
-                <p className="text-gray-600 text-sm">
-                  Un expert vous contacte pour analyser vos besoins spécifiques
-                </p>
-              </div>
-              <div className="text-center">
-                <div 
-                  className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-                  style={{ backgroundColor: '#1b75bb' }}
-                >
-                  <span className="text-white text-2xl">🎯</span>
-                </div>
-                <h4 className="font-bold text-gray-900 mb-2">Proposition sur mesure</h4>
-                <p className="text-gray-600 text-sm">
-                  Devis personnalisé avec fonctionnalités adaptées à votre établissement
-                </p>
-              </div>
-              <div className="text-center">
-                <div 
-                  className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-                  style={{ backgroundColor: '#fdc500' }}
-                >
-                  <span className="text-white text-2xl">⚡</span>
-                </div>
-                <h4 className="font-bold text-gray-900 mb-2">Réponse rapide</h4>
-                <p className="text-gray-600 text-sm">
-                  Devis détaillé et démonstration personnalisée sous 24h
-                </p>
-              </div>
+         <div className="mt-16">
+      <div className="bg-white p-8 rounded-2xl shadow-lg">
+        <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+           Ce que vous obtiendrez
+        </h3>
+        <div className="grid md:grid-cols-3 gap-6">
+          {/* Consultation gratuite */}
+          <div className="text-center">
+            <div
+              className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+              style={{ backgroundColor: "#00adee" }}
+            >
+              <MessageSquare className="w-8 h-8 text-white" />
             </div>
+            <h4 className="font-bold text-gray-900 mb-2">Consultation gratuite</h4>
+            <p className="text-gray-600 text-sm">
+              Un expert vous contacte pour analyser vos besoins spécifiques
+            </p>
+          </div>
+
+          {/* Proposition sur mesure */}
+          <div className="text-center">
+            <div
+              className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+              style={{ backgroundColor: "#1b75bb" }}
+            >
+              <Target className="w-8 h-8 text-white" />
+            </div>
+            <h4 className="font-bold text-gray-900 mb-2">Proposition sur mesure</h4>
+            <p className="text-gray-600 text-sm">
+              Devis personnalisé avec fonctionnalités adaptées à votre établissement
+            </p>
+          </div>
+
+          {/* Réponse rapide */}
+          <div className="text-center">
+            <div
+              className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+              style={{ backgroundColor: "#fdc500" }}
+            >
+              <Zap className="w-8 h-8 text-white" />
+            </div>
+            <h4 className="font-bold text-gray-900 mb-2">Réponse rapide</h4>
+            <p className="text-gray-600 text-sm">
+              Devis détaillé et démonstration personnalisée sous 24h
+            </p>
           </div>
         </div>
+      </div>
+    </div>
 
         {/* Témoignage */}
         <div className="mt-12 text-center">
@@ -476,8 +481,8 @@ const QuoteSection = () => {
                 <span className="text-white font-bold">MD</span>
               </div>
               <div className="text-left">
-                <div className="font-semibold text-gray-900">Marie Dubois</div>
-                <div className="text-gray-500 text-sm">Directrice, École Sainte-Anne</div>
+                <div className="font-semibold text-gray-900">Sokaina Sayouri</div>
+                <div className="text-gray-500 text-sm">Directrice, schoolify</div>
               </div>
             </div>
           </div>

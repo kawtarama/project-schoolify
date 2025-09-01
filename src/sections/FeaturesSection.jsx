@@ -70,13 +70,13 @@ const FeaturesSection = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl   md:text-5xl font-bold text-gray-900 mb-10">
             Pourquoi choisir 
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00adee] to-[#1b75bb] ml-2">
               SCHOOLIFY ?
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl  text-gray-600 max-w-2x mx-auto">
             Une solution complète qui répond à tous vos besoins de gestion scolaire
           </p>
         </div>

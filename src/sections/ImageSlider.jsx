@@ -1,73 +1,11 @@
-// import React, { useState, useEffect } from "react";
-// import img1 from "../assets/bgrem.png";
-// import img2 from "../assets/phone.png";
-// import img3 from "../assets/bgrem.png";
-// import img4 from "../assets/bgrem.png";
-// import img5 from "../assets/bgrem.png";
-// import img6 from "../assets/bgrem.png";
 
-// const images = [img1, img2, img3, img4, img5, img6];
-
-// const ImageSlider = () => {
-//   const visibleImages = 3; 
-//   const [current, setCurrent] = useState(0);
-
-//   // Autoplay
-//   useEffect(() => {
-//     const timer = setInterval(() => {
-//       setCurrent((prev) => prev + 1);
-//     }, 3000);
-//     return () => clearInterval(timer);
-//   }, []);
-
-//   // Reset when reaching the end (to create infinite effect)
-//   const transitionStyle =
-//     current >= images.length
-//       ? { transform: `translateX(0%)`, transition: "none" }
-//       : {
-//           transform: `translateX(-${current * (100 / visibleImages)}%)`,
-//           transition: "transform 0.7s ease",
-//         };
-
-//   // Images doubled for smooth infinite loop
-//   const doubledImages = [...images, ...images];
-
-//   return (
-//     <div className="relative w-full mx-auto mt-10">
-//       <div className="overflow-hidden rounded-2xl shadow-2xl w-full">
-//         <div
-//           className="flex"
-//           style={{
-//             width: `${(doubledImages.length / visibleImages) * 100}%`,
-//             ...transitionStyle,
-//           }}
-//           onTransitionEnd={() => {
-          
-//             if (current >= images.length) {
-//               setCurrent(0);
-//             }
-//           }}
-//         >
-//           {doubledImages.map((src, index) => (
-//             <img
-//               key={index}
-//               src={src}
-//               alt={`Slide ${index}`}
-//               className="w-1/ h-96 object-cover"
-//             />
-//           ))}
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
 import React from "react";
 import img1 from "../assets/bgrem.png";
 import img2 from "../assets/phone.png";
 import img3 from "../assets/bgrem.png";
-import img4 from "../assets/Logo.png";
+import img4 from "../assets/PC.png";
 import img5 from "../assets/bgrem.png";
-import img6 from "../assets/bgrem.png";
+import img6 from "../assets/phone.png";
 
 const galleryImages = [
   { src: img1, alt: "Dashboard SCHOOLIFY" },

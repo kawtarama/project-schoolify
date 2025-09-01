@@ -4,7 +4,7 @@ const TeamSection = () => {
   // Données de l'équipe SCHOOLIFY
   const teamMembers = [
     {
-      name: "Marie Dubois",
+      name: "Sokaina Sayouri",
       position: "CEO & Fondatrice",
       image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face",
       social: {

@@ -157,6 +157,14 @@ const Header = () => {
             >
               Tarifs
             </Link>
+
+                <Link 
+              to="/BlogPage" 
+              onClick={handleNavClick}
+              className="text-gray-300 hover:text-[#00adee] font-medium transition-colors duration-200"
+            >
+              Blog
+            </Link>
             <Link 
               to="/quote" 
               onClick={handleNavClick}
@@ -164,6 +172,7 @@ const Header = () => {
             >
               Devis en ligne
             </Link>
+
             <Link 
               to="/contact" 
               onClick={handleNavClick}
@@ -231,6 +240,17 @@ const Header = () => {
               >
                 Tarifs
               </Link>
+
+
+                 <Link 
+                to="/BlogPage" 
+                onClick={handleNavClick}
+                className="text-gray-300 hover:text-[#00adee] font-medium transition-colors duration-200"
+              >
+                Blog
+              </Link>
+
+
               <Link 
                 to="/quote" 
                 onClick={handleNavClick}

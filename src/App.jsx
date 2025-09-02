@@ -9,6 +9,7 @@ import Pricing from './pages/Pricing';
 import Quote from './pages/Quote';
 import Contact from './pages/Contact';
 import Login from './pages/Login';
+import BlogPage from './pages/BlogPage';
 
 
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/features" element={<Features />} />
           <Route path="/pricing" element={<Pricing />} />
+            <Route path="/BlogPage" element={<BlogPage />} /> 
           <Route path="/quote" element={<Quote />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />

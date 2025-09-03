@@ -3,6 +3,7 @@
 // const BlogPage = () => {
 //   const [selectedCategory, setSelectedCategory] = useState('all');
 
+
 //   const categories = [
 //     { id: 'all', name: 'Tous les articles', count: 24 },
 //     { id: 'education', name: 'Éducation', count: 8 },
